@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap'); /*영어 폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap'); /*한글 폰트 */
+/* 공통 설정 */
+* { padding: 0; margin: 0; box-sizing: border-box;}
+ul { list-style-type: none; }
+h2 { font-size: 21px; }
+h10 { font-size: 21px; text-align: center}
+a { display: inline-block; text-decoration: none; color: inherit;}
+a:link { text-decoration:none; color: inherit;}
+a:hover { text-decoration:none; color: inherit; }
+a:visited { text-decoration:none; color: inherit;}
+a:active { text-decoration:none; color: inherit; }
+/* 헤더(header.php) */
+header { height: 13vh; width: 100vw; border-bottom: solid 0px #ffffff;  }
+header .logo {  font-family: 'Monoton', cursive; position: absolute; left: 50%; top: 25%; transform: translate(-50%, -50%);
+    width: 20vw; height: 5vh; font-size: 40px; color: white; text-align: center}
+header  #image { position: fixed; left: 50%; top: 12%; transform: translate(-50%, -50%); width: 150px; height: 150px; border-top: none; border-left: none; border-right: none; border-bottom : 3px solid black; }
+header .top_menu { position: fixed; left: 82%; top: 25.5%; margin: 20px; color: white; font-family: 'Jua', sans-serif;}
+header li { display: inline; font-family: 'Monoton'; position: fixed; left: 50.5%; top: 36.5%;
+    transform: translate(-50%, -50%); width: 300px; height: 150px; }
+header l0 { display: inline; font-family: 'Jua', sans-serif; position: fixed; left: 89.5%; top: 10.5%;
+    transform: translate(-50%, -50%); width: 350px; height: 150px; text-align: right}
+header .main_menu {	text-align: right; clear: both; color: white; width: 6vw; height: 3vh;margin-top: 100px;
+}
+header .main_menu l1 { width:3vw; height: 15vh; cursor: pointer; margin-top: 20px; background-image: url("../img/1.png");
+    position: fixed; left: 1.5%; top: 52%; transform: translate(-50%, -50%); background-size: cover;
+    border-radius: 20px 60px 60px 20px / 20px 60px 60px 20px; font-family: 'Monoton'; font-size: 20px;
+}
+header .main_menu l2 { width:6vw; height: 4vh; cursor: pointer; margin-top: 20px; color: black; text-align: center; line-height: 40px;
+    position: fixed; left: 96%; top: 28.8%; transform: translate(-50%, -50%); background-image: url("../img/1.png");
+    border-radius: 100px 100px 20px 20px / 70px 70px 20px 20px; font-family: 'Monoton'; font-size: 20px; background-size: cover;
+}
+header .main_menu li2 { font-family: 'Monoton', cursive;
+    background-image: url("../img/1.png"); color: black;
+    border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;
+}
+header .main_menu li3 { font-family: 'Monoton', cursive;
+    background-image: url("../img/1.png");color: black;
+    border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;
+}
+header .main_menu li4 { font-family: 'Monoton', cursive;
+    background-image: url("../img/1.png");color: black;
+    border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;
+}
+/* 버튼 */
+.buttons { clear:both; text-align: right; margin: 5px 30px; }
+.buttons2 { clear:both; text-align: right; margin: 5px 30px;}
+.buttons li { display: inline; }
+/*목록 버튼*/
+.buttons button { width:6vw; height: 4vh; cursor: pointer; margin-top: 20px; background-image: url("../img/1.png");
+    position: fixed; left: 72.1%; top: 57%; transform: translate(-50%, -50%);
+    border-radius: 20px 20px 100px 100px / 20px 20px 70px 70px; font-family: 'Monoton'; font-size: 20px; background-size: cover;
+}
+.buttons2 button { position: fixed; left: 48.2%; top: 25%; transform: translate(-50%, -50%); cursor: pointer; margin-top: 2px; }
+.buttons3 button {  cursor: pointer; margin-top: 2px; }
+/*숨기기 버튼*/
+.buttons4 button { width:3vw; height: 12vh; cursor: pointer; margin-top: 20px; background-image: url("../img/1.png");
+    position: fixed; left: 1%; top: 54%; transform: translate(-50%, -50%); background-size: cover;
+    border-radius: 00px 20px 20px 00px / 00px 20px 20px 00px; font-family: 'Monoton'; font-size: 15px;
+}
+/*메뉴 버튼*/
+.buttons5 button { width:3vw; height: 12vh; cursor: pointer; margin-top: 20px; background-image: url("../img/1.png");
+    position: fixed; left: 1%; top: 42%; transform: translate(-50%, -50%); background-size: cover; font-weight: normal;
+    border-radius: 00px 20px 20px 00px / 00px 20px 20px 00px; font-family: 'Monoton'; font-size: 15px;
+}
+/*로그아웃 및 회원가입 버튼*/
+.buttons15 button { width:3vw; height: 16vh; cursor: pointer; margin-top: 20px; background-image: url("../img/1.png");
+    position: fixed; left: 1%; top: 85.6%; transform: translate(-50%, -50%); background-size: cover;
+    border-radius: 00px 20px 20px 00px / 00px 20px 20px 00px; font-family: 'Monoton'; font-size: 15px;
+}
+/*로그인 및 정보수정 버튼*/
+.buttons14 button {  width:3vw; height: 13vh; cursor: pointer; margin-top: 20px; background-image: url("../img/1.png");
+    position: fixed; left: 1%; top: 71.1%; transform: translate(-50%, -50%); background-size: cover;
+    border-radius: 00px 20px 20px 00px / 00px 20px 20px 00px; font-family: 'Monoton'; font-size: 15px;
+}
+/*글쓰기 버튼*/
+.buttons6 button { width:6vw; height: 4vh; cursor: pointer; margin-top: 20px; background-image: url("../img/1.png");
+    position: fixed; left: 65.5%; top: 57%; transform: translate(-50%, -50%);
+    border-radius: 20px 20px 100px 100px / 20px 20px 70px 70px; font-family: 'Monoton'; font-size: 20px; background-size: cover;
+}
+/*저장하기 버튼*/
+.buttons7 button { width:6vw; height: 4vh; cursor: pointer; margin-top: 20px; background-image: url("../img/1.png");
+    position: fixed; left: 65.5%; top: 72%; transform: translate(-50%, -50%);
+    border-radius: 20px 20px 100px 100px / 20px 20px 70px 70px; font-family: 'Monoton'; font-size: 20px; background-size: cover;
+}
+/*목록돌아가기 버튼*/
+.buttons8 button { width:6vw; height: 4vh; cursor: pointer; margin-top: 20px; background-image: url("../img/1.png");
+    position: fixed; left: 72.1%; top: 72%; transform: translate(-50%, -50%);
+    border-radius: 20px 20px 100px 100px / 20px 20px 70px 70px; font-family: 'Monoton'; font-size: 20px; background-size: cover;
+}
+/*뷰 목록 버튼*/
+.buttons9 button { width:6vw; height: 4vh; cursor: pointer; margin-top: 20px; background-image: url("../img/1.png");
+    position: fixed; left: 72%; top: 62.8%; transform: translate(-50%, -50%);
+    border-radius: 20px 20px 100px 100px / 20px 20px 70px 70px; font-family: 'Monoton'; font-size: 20px; background-size: cover;
+}
+/*뷰 삭제 버튼*/
+.buttons10 button { width:6vw; height: 4vh; cursor: pointer; margin-top: 20px; background-image: url("../img/1.png");
+    position: fixed; left: 65.5%; top: 62.8%; transform: translate(-50%, -50%);
+    border-radius: 20px 20px 100px 100px / 20px 20px 70px 70px; font-family: 'Monoton'; font-size: 20px; background-size: cover;
+}
+/*뷰 수정 버튼*/
+.buttons11 button { width:6vw; height: 4vh; cursor: pointer; margin-top: 20px; background-image: url("../img/1.png");
+    position: fixed; left: 59%; top: 62.8%; transform: translate(-50%, -50%);
+    border-radius: 20px 20px 100px 100px / 20px 20px 70px 70px; font-family: 'Monoton'; font-size: 20px; background-size: cover;
+}
+/*회원수정 저장,취소 버튼*/
+.buttons12 button { width:13vw; height: 4vh; cursor: pointer; margin-top: 20px; margin-left: 30px;background-image: url("../img/1.png");
+    border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; font-family: 'Monoton'; font-size: 20px; background-size: cover;
+}
+/*회원 로그인 확인 버튼*/
+.buttons13 button { text-align: center; width:19vw; height: 4vh; cursor: pointer; margin-top: 5px; margin-left: -1px;background-image: url("../img/1.png");
+    border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; font-family: 'Monoton'; font-size: 20px; background-size: cover; line-height: 0px;
+    align-items: center;
+}
+/* 회원가입 폼(form.php)*/
+.join_form { width: 600px; height: 375px; border-bottom: solid 1px #cccccc; font-family: 'Jua', sans-serif; background-color: white; opacity: 0.8;
+    border-radius: 40px 40px 40px 40px / 40px 40px 40px 40px; position: fixed; left: 50%; top: 56%; transform: translate(-50%, -50%);
+}
+.join_form h2 { width: 600px; padding: 30px 0 10px 0; margin: 0 auto; border-bottom: solid 3px black;}
+.join_form li {	height: 40px; padding: 20px 10px;}
+.join_form .buttons { clear:both; text-align: right; margin-top: 30px; }
+.join_form button { padding: 3px 10px;  }
+.join_form .col1 { width: 130px; }
+.join_form .col2 { width: 360px; }
+.join_form input { width: 360px; height: 30px; }
+.join_form span { display: inline-block; }
+/* 로그인 폼 (login_form.php)*/
+.login_form { width: 400px; height: 260px; border-bottom: solid 1px #cccccc; font-family: 'Jua', sans-serif; background-color: white; opacity: 0.8;
+    border-radius: 40px 40px 40px 40px / 40px 40px 40px 40px; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);
+}
+.login_form h2 { width: 400px; margin: 0 auto; padding: 30px 0 10px 0; border-bottom: solid 3px black; }
+.login_form li { height: 50px; padding: 20px 20px; }
+.login_form span { display: inline-block; }
+.login_form .col1 { width: 100px; }
+.login_form .col2 { width: 250px; }
+.login_form input { width: 250px; height: 30px; }
+.login_form button { padding: 8px 156px; cursor: pointer; }
+/* 게시판 글쓰기(form.php) */
+.board_form p { width:14vw; height: 4vh; cursor: pointer; margin-top: 20px; color: black; text-align: center; line-height:40px; background-size: cover;
+    position: fixed; left: 50%; top: 33.9%; transform: translate(-50%, -50%); background-image: url("../img/1.png");
+    border-radius: 20px 20px 100px 100px / 20px 20px 70px 70px; font-family: 'Monoton'; font-size: 20px;
+}
+.board_form h2 { margin-top: 20px;	padding: 10px 30px; border-bottom: solid 2px black; }
+.board_form span { display: inline-block; color: black;
+    border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; text-align: right; font-family: 'Jua', sans-serif;}
+.board_form .col1 { width: 5%; line-height: 40px }
+.board_form .col2 { width: 5%; line-height: 40px }
+.board_form .col3 { width: 5%; line-height: 40px }
+.board_form .col4 { width: 30%; line-height: 40px }
+.board_form .col5 { width: 5.5%; float: left; line-height: 40px }
+.board_form .col6 { width: 93.5%; float: left; line-height: 11px }
+.board_form .col7 { margin-left: -410px; width: 50%; margin-top: 7px}
+.board_form .col8 { margin-left: 5px;width: 6%; margin-top:-20px; line-height: 40px;}
+.board_form .col9 { width: 35%; margin-left: -253px; margin-top: 6px}
+.board_form li { position: relative; border-bottom: solid 1px #000000;
+    width: 50%; height: 4vh; background:white; border-radius: 5px 5px 5px 5px / 5px 5px 5px 5px;
+    opacity: 0.9; left: 50%; top: -785px;  transform: translate(-50%, -50%);
+}
+.board_form input[type=text] { width: 100%; height: 25px; }
+.board_form .is_html { float: right; }
+.board_form .area { height: 155px; }
+.board_form textarea { width: 100%; height: 130px; }
+.board_form .email input { width: 150px; }
+/* 게시판 목록보기(list.php) */
+.board_list p { width:14vw; height: 4vh; cursor: pointer; margin-top: 20px; color: black; text-align: center; line-height:40px; background-size: cover;
+    position: fixed; left: 50%; top: 33.9%; transform: translate(-50%, -50%); background-image: url("../img/1.png");
+    border-radius: 20px 20px 100px 100px / 20px 20px 70px 70px; font-family: 'Monoton'; font-size: 20px;
+}
+.board_list h2 { position: absolute; left: 49%; top: 36%; transform: translate(-50%, -50%); padding: 30px 30px; width: 30%; 
+	text-align: center; font-family: 'Jua', sans-serif; color:white; }
+.board_list h3 { position: absolute; left: 49%; top: 36%; transform: translate(-50%, -50%); padding: 30px 30px; width: 30%; 
+	text-align: center; font-family: 'Jua', sans-serif; color:white; }
+.board_list li { position: relative; border-bottom: solid 1px #000000;
+    width: 50%; background:white; border-radius: 5px 5px 5px 5px / 5px 5px 5px 5px;
+    opacity: 0.8; left: 50%; top: -875px;  transform: translate(-50%, -50%);
+}
+.board_list span { display: inline-block; color: black;
+    border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; text-align: right; font-family: 'Jua', sans-serif;}
+.board_list .col1 { width: 10%; vertical-align: middle; text-align: left; }
+.board_list .col2 { width: 50%; text-align: left; vertical-align: middle; }
+.board_list .col2 img { vertical-align: text-top; margin-right: 20px; }
+.board_list .col3 { width: 10%; vertical-align: middle; }
+.board_list .col4 { width: 10%; vertical-align: middle; text-align:center }
+.board_list .col5 { width: 15%; text-align: center; vertical-align: middle;  }
+.board_list #input1 { border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px; opacity: 0.8;position: absolute; left: 43%; top: 57%; transform: translate(-50%, -50%); width: 300px; height: 57px; border-top: none; border-left: none; border-right: none; border-bottom : 3px solid black; }
+.board_list #input2 { border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px; position: absolute; left: 54%; top: 57%; transform: translate(-50%, -50%); width: 100px; height: 55px; border-top: none; border-left: none; border-right: none; border-bottom : 3px solid black; }
+.board_list #input3 { border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px; position: absolute; left: 60%; top: 57%; transform: translate(-50%, -50%); width: 100px; height: 55px; border-top: none; border-left: none; border-right: none; border-bottom : 3px solid black; }
+.board_list #input4 { border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px; opacity: 0.8; position: absolute; left: 47%; top: 80%; transform: translate(-50%, -50%); width: 300px; height: 55px; border-top: none; border-left: none; border-right: none; border-bottom : 3px solid black; }
+.board_list #input5 { border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px; position: absolute; left: 58%; top: 80%; transform: translate(-50%, -50%); width: 100px; height: 55px; border-top: none; border-left: none; border-right: none; border-bottom : 3px solid black; }
+.board_list #image { position: absolute; left: 50%; top: 80%; transform: translate(-50%, -50%); width: 300px; height: 300px; border-top: none; border-left: none; border-right: none; border-bottom : 3px solid black; }
+.page_num { position: absolute; left: 50%; top: 57%; transform: translate(-50%, -50%);
+    text-align: center;	margin-top: 20px; color:white; font-family: 'Monoton'; width: 10vw; color: black;
+    background-image: url("../img/1.png"); border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; background-size: cover;
+}
+.page_num li { display: inline; }
+/* 테이블 */
+table.type09 { position: absolute; left: 50%; top: 32%; transform: translate(-50%, -50%); opacity: 0.8;
+    text-align: center; line-height: 1.5; width: 50%; color: white; font-family: 'Jua', sans-serif; }
+table.type09 thead th { padding: 10px; vertical-align: top; color: #ffffff; font-size: 20px;  }
+table.type09 tbody th { padding: 10px; vertical-align: top; border-bottom: 1px solid #ffffff; background: #000000; }
+table.type09 td { width: 300px; padding: 10px; vertical-align: top; border-bottom: 1px solid #ccc; background-color: white; color: black;
+    border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px;
+}
+/* 테이블2 */
+table.type08 { position: absolute; left: 35%; top: 65%; transform: translate(-50%, -50%);
+    text-align: center; line-height: 2.2; width: 7%; color: white; font-family: 'Jua', sans-serif; opacity: 0.8 }
+table.type08 td { width: 200px; padding: 10px; vertical-align: top; background-color: black;  border-radius: 40px 40px 40px 40px / 40px 40px 40px 40px;
+}
+/* 테이블3 */
+table.type07 { position: absolute; left: 65%; top: 65%; transform: translate(-50%, -50%);
+    text-align: center; line-height: 2.2; width: 7%; color: white; font-family: 'Jua', sans-serif; opacity: 0.8 }
+table.type07 td { width: 200px; padding: 10px; vertical-align: top; background-color: black; border-radius: 40px 40px 40px 40px / 40px 40px 40px 40px;}
+
+/* 테이블4 */
+table.type06 { position: absolute; left: 50%; top: 62%; transform: translate(-50%, -50%);
+    border-collapse: collapse; text-align: center; line-height: 2.2; width: 15%; color: inherit; font-family: 'Jua', sans-serif; }
+table.type06 td { width: 200px; padding: 10px; vertical-align: top; }
+/* 테이블4-2 */
+table.type06_2 { position: absolute; left: 50%; top: 62%; transform: translate(-50%, -50%);
+    border-collapse: collapse; text-align: center; line-height: 2.2; width: 12%; color: inherit; font-family: 'Jua', sans-serif; }
+table.type06_2 td{ padding: 2px; vertical-align: top; background-image: url("../img/1.png");
+    background-size: cover; border-radius: 20px 20px 20px 20px / 20px 20px 20px 20px;
+}
+/* 테이블5 */
+table.type05 { position: absolute; left: 50%; top: 60%; transform: translate(-50%, -50%); opacity: 0.8;
+    border-collapse: collapse; text-align: center; line-height: 2.2; width: 35%; height: 10% }
+table.type05 td { padding: 0px; font-family: 'Monoton'; background-color: black;
+    border-radius: 40px 40px 40px 40px / 40px 40px 40px 40px;
+}
+/* 테이블6 */
+table.type04 { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); opacity: 0.8;
+    border-collapse: collapse; text-align: center; line-height: 2.2; width: 25%; height: 10% }
+table.type04 td { padding: 0px; font-family: 'Jua', sans-serif; background-color: black;
+    border-radius: 40px 40px 40px 40px / 40px 40px 40px 40px;
+}
+/* 테이블7 */
+table.type03 { position: absolute; left: 50%; top: 60%; transform: translate(-50%, -50%); color: white; font-family: 'Jua', sans-serif;
+    text-align: center; line-height: 2.2; width: 50%; }
+table.type03 td { width: 200px; padding: 10px; vertical-align: top;}
+/* 테이블8 */
+table.type02 { color: white; font-family: 'Jua', sans-serif; text-align: center; line-height: 2.2;}
+table.type02 td {height: 10vh; font-size: 20px; font-family: 'Monoton'; background-image: url("../img/1.png");
+    color: black; border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; width:  30vw;
+}
+/* 게시판 내용보기(view.php) */
+.board_view p { width:14vw; height: 4vh; cursor: pointer; margin-top: 20px; color: black; text-align: center; line-height:40px; background-size: cover;
+    position: fixed; left: 50%; top: 33.9%; transform: translate(-50%, -50%); background-image: url("../img/1.png");
+    border-radius: 20px 20px 100px 100px / 20px 20px 70px 70px; font-family: 'Monoton'; font-size: 20px;
+}
+.board_view li { position: fixed; left: 50%; top:45%; transform: translate(-50%, -50%); border-bottom: solid 1px #000000; width: 50%;
+    background:white; border-radius: 5px 5px 5px 5px / 5px 5px 5px 5px;  opacity: 0.8}
+.board_view li2 { position: fixed; left: 50%; top:54.3%; transform: translate(-50%, -50%); border-bottom: solid 1px #000000; width: 50%;
+    background:white; border-radius: 5px 5px 5px 5px / 5px 5px 5px 5px;  opacity: 0.8}
+.board_view .row1 { padding: 15px 30px; border-bottom: solid 1px #aaaaaa; }
+.board_view .row2 { padding: 15px 30px 80px 30px; border-bottom: solid 1px #cccccc; line-height: 180% }
+.board_view .col2 { float: right; }
+/* ripple */
+.ripple_title { padding: 20px 30px;}
+.ripple_title span { display: inline-block; }
+.ripple_title .col1 { width: 100px; }
+.ripple_title .col3 {  float: right; }
+.ripple_content { margin: 0 30px; border-bottom: dotted 1px #cccccc; padding-bottom: 20px; }
+.ripple_box { height:120px; padding:14px; margin: 30px; background-color:#efefef; border-top: solid 1px #cccccc; }
+.ripple_box1 { float:left; width:18%; }
+.ripple_box2 { float:left; width:72%; padding-left:5px; }
+.ripple_box2 textarea { width:100%; height: 80px; border:solid 1px #cccccc; }
+.ripple_box3 { width: 10%; float:left; padding-left:8px; }
+/* 푸터(footer.php) */
+footer { clear: both; padding-top: 30px; text-align: center; }
+footer p { line-height: 180%; }
+/* 메인 페이지 */
+.notice { width: 50%; float: left; padding: 30px 0 0 30px; }
+.notice p { width:14vw; height: 4vh; cursor: pointer; margin-top: 20px; color: black; text-align: center; line-height:40px;
+    position: fixed; left: 50%; top: 33.9%; transform: translate(-50%, -50%); background-image: url("../img/1.png"); z-index: 2;
+    border-radius: 20px 20px 100px 100px / 20px 20px 70px 70px; font-family: 'Monoton'; font-size: 20px; background-size: cover;
+}
+.notice p2{position: absolute; left: 47.5%;top : 43%;transform: translate(-50%, -50%); width: 200px; display: inline-block; color: black; background-color: white; opacity: 0.8;
+    border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; text-align: left; font-family: 'Jua', sans-serif; float: left;
+}
+.notice p3{position: absolute; left: 55.5%; top : 43%; transform: translate(-50%, -50%); width: 90px; display: inline-block; color: black; background-color: white; opacity: 0.8;
+    border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; text-align: left; font-family: 'Jua', sans-serif; float: left;
+}
+
+.notice p4{position: absolute; left: 47.5%;top : 47%; transform: translate(-50%, -50%); width: 200px; display: inline-block; color: black; background-color: white; opacity: 0.8;
+    border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; text-align: left; font-family: 'Jua', sans-serif; float: left;
+}
+.notice p5{position: absolute; left: 55.5%;top : 47%; transform: translate(-50%, -50%); width: 90px; display: inline-block; color: black; background-color: white; opacity: 0.8;
+    border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; text-align: left; font-family: 'Jua', sans-serif; float: left;
+}
+
+.notice p6{position: absolute; left: 47.5%;top : 51%; transform: translate(-50%, -50%); width: 200px; display: inline-block; color: black; background-color: white; opacity: 0.8;
+    border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; text-align: left; font-family: 'Jua', sans-serif; float: left;
+}
+.notice p7{position: absolute; left: 55.5%;top : 51%; transform: translate(-50%, -50%); width: 90px; display: inline-block; color: black; background-color: white; opacity: 0.8;
+    border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; text-align: left; font-family: 'Jua', sans-serif; float: left;
+}
+
+.notice p8{position: absolute; left: 47.5%;top : 55%; transform: translate(-50%, -50%); width: 200px; display: inline-block; color: black; background-color: white; opacity: 0.8;
+    border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; text-align: left; font-family: 'Jua', sans-serif; float: left;
+}
+.notice p9{position: absolute; left: 55.5%;top : 55%; transform: translate(-50%, -50%); width: 90px; display: inline-block; color: black; background-color: white; opacity: 0.8;
+    border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; text-align: left; font-family: 'Jua', sans-serif; float: left;
+}
+
+.notice p10{position: absolute; left: 47.5%;top : 59%; transform: translate(-50%, -50%); width: 200px; display: inline-block; color: black; background-color: white; opacity: 0.8;
+    border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; text-align: left; font-family: 'Jua', sans-serif; float: left;
+}
+.notice p11{position: absolute; left: 55.5%;top : 59%; transform: translate(-50%, -50%); width: 90px; display: inline-block; color: black; background-color: white; opacity: 0.8;
+    border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px; text-align: left; font-family: 'Jua', sans-serif; float: left;
+}
+
